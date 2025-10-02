@@ -8,6 +8,7 @@ https://docs.djangoproject.com/en/5.2/topics/settings/
 
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.2/ref/settings/
+
 """
 
 from pathlib import Path
@@ -42,10 +43,13 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'corsheaders',
+
+    
     
     #'debug_toolbar',
 ]
 
+AUTH_USER_MODEL = 'playground.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -132,6 +136,7 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 

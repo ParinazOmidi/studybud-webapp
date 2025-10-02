@@ -6,7 +6,7 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm
-from .models import Room , Topic, Message
+from .models import Room , Topic, Message, User
 from .form import RoomForm, UserForm
 # Create your views here.
 
